@@ -7,43 +7,64 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Edu Piima</h1>
-    <p>Ta'lim uchun bepul resurslar</p>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="#about">Biz haqimizda</a></li>
-      <li><a href="#courses">Kurslar</a></li>
-      <li><a href="#contact">Bog'lanish</a></li>
-    </ul>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="logo">Edu Piima</a>
+      <ul class="nav-links">
+        <li><a href="#home">Bosh sahifa</a></li>
+        <li><a href="#about">Biz haqimizda</a></li>
+        <li><a href="#courses">Kurslar</a></li>
+        <li><a href="#contact">Bog'lanish</a></li>
+      </ul>
+    </div>
   </nav>
-  <main>
+
+  <!-- Header -->
+  <header class="hero">
+    <div class="container">
+      <h1>Ta'limni boshlang</h1>
+      <p>Biz bilan yangi bilimlarni o'rganing</p>
+      <a href="#courses" class="btn">Kurslarni ko'rish</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
     <section id="about">
       <h2>Biz haqimizda</h2>
-      <p>Edu Piima ta'lim resurslarini taqdim etadi va o'quvchilarni yangi bilimlar bilan boyitadi.</p>
+      <p>Edu Piima - bu o‘qituvchilar va o‘quvchilar uchun onlayn platforma. Maqsadimiz ta’limni osonlashtirish.</p>
     </section>
     <section id="courses">
       <h2>Kurslar</h2>
-      <ul>
-        <li>Python dasturlash</li>
-        <li>Web dasturlash</li>
-        <li>Sun'iy intellekt asoslari</li>
-      </ul>
+      <div class="courses">
+        <div class="course">
+          <h3>Python asoslari</h3>
+          <p>Python dasturlashni noldan boshlab o‘rganing.</p>
+        </div>
+        <div class="course">
+          <h3>JavaScript asoslari</h3>
+          <p>Sayt yaratish uchun muhim JavaScript bilimlari.</p>
+        </div>
+        <div class="course">
+          <h3>Web dasturlash</h3>
+          <p>HTML, CSS va JavaScript yordamida sayt tuzing.</p>
+        </div>
+      </div>
     </section>
     <section id="contact">
       <h2>Bog'lanish</h2>
       <form id="contactForm">
         <label for="name">Ism:</label>
         <input type="text" id="name" name="name" required>
-        
         <label for="message">Xabar:</label>
         <textarea id="message" name="message" required></textarea>
-        
-        <button type="submit">Yuborish</button>
+        <button type="submit" class="btn">Yuborish</button>
       </form>
     </section>
   </main>
+
+  <!-- Footer -->
   <footer>
     <p>&copy; 2024 Edu Piima. Barcha huquqlar himoyalangan.</p>
   </footer>
