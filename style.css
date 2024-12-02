@@ -1,47 +1,60 @@
+/* Umumiy Sozlamalar */
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  margin: 0;
-  padding: 0;
+  color: #333;
 }
 
-header {
-  background: #4CAF50;
+/* Navbar */
+.navbar {
+  background: #007bff;
   color: white;
-  text-align: center;
-  padding: 1rem 0;
+  padding: 0.5rem 1rem;
 }
-
-nav ul {
-  background: #333;
-  color: white;
+.navbar .container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links {
   list-style: none;
+  display: flex;
   margin: 0;
   padding: 0;
 }
-
-nav ul li {
+.nav-links li {
   margin: 0 1rem;
 }
-
-nav ul li a {
+.nav-links a {
   color: white;
   text-decoration: none;
 }
 
-main {
-  padding: 2rem;
-}
-
-section {
-  margin-bottom: 2rem;
-}
-
-footer {
-  background: #333;
+/* Header */
+.hero {
+  background: #007bff;
   color: white;
   text-align: center;
-  padding: 1rem 0;
+  padding: 3rem 1rem;
+}
+.hero .btn {
+  background: #fff;
+  color: #007bff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Kurslar bo'limi */
+.courses {
+  display: flex;
+  gap: 1rem;
+}
+.course {
+  background: #f4f4f4;
+  padding: 1rem;
+  border-radius: 5px;
+  flex: 1;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
